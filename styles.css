@@ -87,6 +87,16 @@ p { margin:.6em 0; color:#e6e6eb; }
 .titem{ display:grid; grid-template-columns:110px 1fr; gap:18px; padding:18px; border:1px solid #202033; border-radius:var(--radius); background:#12121a; }
 .tdate{ color:var(--muted); font-weight:600; }
 
+.exp-logo {
+  display: block;
+  width: 50px;       /* adjust size until it looks balanced */
+  height: 50px;
+  margin: 10px auto 0;  /* centers it under the year */
+  border-radius: 50%;   /* makes it circular */
+  object-fit: cover;    /* crops nicely */
+}
+
+
 /* projects */
 .project{ display:block; overflow:hidden; transition:transform .2s ease; }
 .project:hover{ transform:translateY(-3px); }
