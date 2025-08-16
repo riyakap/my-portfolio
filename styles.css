@@ -88,13 +88,14 @@ p { margin:.6em 0; color:#e6e6eb; }
 .tdate{ color:var(--muted); font-weight:600; }
 
 .exp-logo {
-  display: block;
-  width: 50px;       /* adjust size until it looks balanced */
-  height: 50px;
-  margin: 10px auto 0;  /* centers it under the year */
-  border-radius: 50%;   /* makes it circular */
-  object-fit: cover;    /* crops nicely */
+  display: block;          /* makes it respect margin auto */
+  margin: 10px auto;       /* centers it horizontally */
+  width: 60px;             /* adjust this number for size */
+  height: 60px;            /* keep width/height same for circle */
+  border-radius: 50%;      /* makes it round */
+  object-fit: cover;       /* crops image inside circle */
 }
+
 
 
 /* projects */
