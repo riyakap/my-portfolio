@@ -84,17 +84,39 @@ p { margin:.6em 0; color:#e6e6eb; }
 
 /* timeline */
 .timeline{ display:grid; gap:18px; margin-top:8px; }
-.titem{ display:grid; grid-template-columns:110px 1fr; gap:18px; padding:18px; border:1px solid #202033; border-radius:var(--radius); background:#12121a; }
-.tdate{ color:var(--muted); font-weight:600; }
-
-.exp-logo {
-  display: block;          /* makes it respect margin auto */
-  margin: 10px auto;       /* centers it horizontally */
-  width: 60px;             /* adjust this number for size */
-  height: 60px;            /* keep width/height same for circle */
-  border-radius: 50%;      /* makes it round */
-  object-fit: cover;       /* crops image inside circle */
+/* make timeline a 3-column media layout: date | logo | content */
+.titem{
+  display:grid;
+  grid-template-columns: 90px 56px 1fr;  /* date | logo | content */
+  gap:18px;
+  padding:18px;
+  border:1px solid #202033;
+  border-radius:var(--radius);
+  background:#12121a;
 }
+
+.tdate{
+  color:var(--muted);
+  font-weight:600;
+  padding-top:4px;          /* aligns with logo/title nicely */
+}
+
+/* logo column */
+.tlogo{
+  display:flex;
+  align-items:flex-start;   /* top-align with the title */
+  justify-content:center;
+}
+
+/* the logo itself */
+.exp-logo{
+  width:48px;               /* tweak size here */
+  height:48px;
+  border-radius:50%;        /* circular */
+  object-fit:cover;
+  border:1px solid #202033; /* subtle ring */
+}
+
 
 
 
